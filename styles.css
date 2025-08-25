@@ -18,6 +18,8 @@
 
 /* || Main Styling */
 
+/* Header Section */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -26,7 +28,55 @@ header {
   width: 100%;
 }
 
+/* Hero Section */
+
+.hero-section {
+  margin-bottom: 3em;
+}
+
 .hero-img {
   width: 100%;
   height: auto;
+}
+
+/* Text Section */
+
+.text-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--Gray-500);
+  font-size: 1.1rem;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+  width: 85%;
+}
+
+button {
+  background-color: var(--Gray-950);
+  border: none;
+  border-radius: 1.2rem;
+  color: var(--Gray-50);
+  font-weight: bold;
+  padding: 1rem 2rem;
+}
+
+/* Brand Section */
+
+.brand-section {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
