@@ -4,6 +4,8 @@
   --Gray-50: hsl(0, 0%, 98%);
   --Gray-500: hsl(0, 0%, 41%);
   --Gray-950: hsl(0, 0%, 8%);
+  --Overlay: hsla(0, 0%, 22%, 0.7);
+  --White: hsl(0, 0%, 100%);
 }
 
 /* || Global Styling */
@@ -25,8 +27,150 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  position: relative;
   width: 100%;
 }
+
+/* Hidden Nav */
+
+.hidden-nav {
+  background-color: var(--White);
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  width: 16rem;
+  z-index: 2;
+}
+
+/* Hidden Nav Content */
+
+.hidden-nav-header {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+
+.hidden-nav-features {
+  padding: 0 2em 2em 2rem;
+}
+
+.collapse-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+h2 {
+  color: var(--Gray-500);
+  font-size: 1.1rem;
+  margin-right: 1rem;
+}
+
+.icon-arrow-up {
+  width: 1rem;
+  height: auto;
+}
+
+/** Features **/
+
+.features-list-container {
+  padding: 0 1.4rem;
+  width: 100%;
+}
+
+.menu-link {
+  color: var(--Gray-500);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+li:last-of-type {
+  margin-bottom: 0;
+}
+
+.features-icon {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: auto;
+}
+
+/**...**/
+
+/** Company **/
+
+.hidden-nav-company {
+  padding: 0 2em 2em 2rem;
+}
+
+.company-list-container {
+  padding: 0 1.4rem;
+  width: 100%;
+}
+
+/**...**/
+
+/** Other **/
+
+.hidden-nav-other-link {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em 0 2rem;
+}
+
+.other {
+  color: var(--Gray-500);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+}
+
+/** Buttons **/
+
+.hidden-nav-buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: var(--Gray-500);
+  width: 80%;
+}
+
+.register-btn {
+  background-color: var(--White);
+  border: 0.12rem solid var(--Gray-500);
+  color: var(--Gray-500);
+  width: 80%;
+}
+
+/**...**/
+
+/**...**/
+
+.overlay {
+  background-color: var(--Overlay);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+/**...**/
 
 /* Hero Section */
 

@@ -19,12 +19,86 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
+    <!-- Hidden Nav for mobile view -->
+    <nav class="hidden-nav">
+      <section class="hidden-nav-header">
+        <img
+          src="./images/icon-close-menu.svg"
+          alt="Black X shaped icon with two intersecting diagonal lines on a transparent background, used to represent closing or dismissing a menu, simple and neutral design with no additional text or imagery"
+        />
+      </section>
+      <section class="hidden-nav-features">
+        <div class="collapse-header">
+          <h2>Features</h2>
+          <img class="icon-arrow-up" src="./images/icon-arrow-up.svg" alt="" />
+        </div>
+        <div class="features-list-container">
+          <ul>
+            <li>
+              <img
+                class="features-icon"
+                src="./images/icon-todo.svg"
+                alt=""
+              /><a class="menu-link" href="#">Todo List</a>
+            </li>
+            <li>
+              <img
+                class="features-icon"
+                src="./images/icon-calendar.svg"
+                alt=""
+              />
+              <a class="menu-link" href="#">Calendar</a>
+            </li>
+            <li>
+              <img
+                class="features-icon"
+                src="./images/icon-reminders.svg"
+                alt=""
+              />
+              <a class="menu-link" href="#">Reminders</a>
+            </li>
+            <li>
+              <img
+                class="features-icon"
+                src="./images/icon-planning.svg"
+                alt=""
+              />
+              <a class="menu-link" href="#">Planning</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="hidden-nav-company">
+        <div class="collapse-header">
+          <h2>Company</h2>
+          <img class="icon-arrow-up" src="./images/icon-arrow-up.svg" alt="" />
+        </div>
+        <div class="company-list-container">
+          <ul>
+            <li><a class="menu-link" href="#">History</a></li>
+            <li><a class="menu-link" href="#">Our Team</a></li>
+            <li><a class="menu-link" href="#">Blog</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="hidden-nav-other-link">
+        <a class="list-link other" href="#">Careers</a>
+        <a class="list-link other" href="#">About</a>
+      </section>
+      <section class="hidden-nav-buttons">
+        <button class="login-btn" type="button">Login</button>
+        <button class="register-btn" type="button">Register</button>
+      </section>
+    </nav>
+    <div class="overlay"></div>
+    <!-- End -->
     <header>
       <img
         src="./images/logo.svg"
         alt="Snap company logo in bold black letters on a transparent background, modern and professional style, no additional imagery or text"
       />
       <img
+        id="menuBtn"
         src="./images/icon-menu.svg"
         alt="Three horizontal black lines stacked vertically representing a menu icon, simple and modern design on a transparent background"
       />
