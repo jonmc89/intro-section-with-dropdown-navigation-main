@@ -1,0 +1,32 @@
+/* || Root Styling */
+
+:root {
+  --Gray-50: hsl(0, 0%, 98%);
+  --Gray-500: hsl(0, 0%, 41%);
+  --Gray-950: hsl(0, 0%, 8%);
+}
+
+/* || Global Styling */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Epiglogue", sans-serif, serif;
+}
+
+/* || Main Styling */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}

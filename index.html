@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./images/logo.svg"
+        alt="Snap company logo in bold black letters on a transparent background, modern and professional style, no additional imagery or text"
+      />
+      <img
+        src="./images/icon-menu.svg"
+        alt="Three horizontal black lines stacked vertically representing a menu icon, simple and modern design on a transparent background"
+      />
+    </header>
+    <main>
+      <section class="hero-section">
+        <img
+          class="hero-img"
+          src="./images/image-hero-mobile.png"
+          alt="Person with light brown hair styled in twists wearing a white t-shirt, standing against a bright yellow background and using a laptop, surrounded by colorful geometric shapes in purple, blue, yellow, and black, creating a modern and creative atmosphere"
+        />
+      </section>
+      <section class="text-section">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button type="button">Learn more</button>
+      </section>
+      <section class="brand-section">
+        <img
+          src="./images/client-databiz.svg"
+          alt="Databiz company logo in light gray modern sans-serif letters on a transparent background, simple and professional design with no additional imagery or text"
+        />
+        <img
+          src="./images/client-audiophile.svg"
+          alt="Audiophile company logo in light gray modern sans-serif letters on a transparent background, simple and professional design with no additional imagery or text"
+        />
+        <img
+          src="./images/client-meet.svg"
+          alt="Meet company logo in light gray modern sans-serif letters on a transparent background, minimalist and professional design with no additional imagery or text"
+        />
+        <img
+          src="./images/client-maker.svg"
+          alt="Maker company logo in light gray modern sans-serif letters on a transparent background, clean and professional design with no additional imagery or text"
+        />
+      </section>
+    </main>
+  </body>
 </html>
