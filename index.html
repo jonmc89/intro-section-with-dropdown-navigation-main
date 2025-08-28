@@ -20,9 +20,11 @@
   </head>
   <body>
     <!-- Hidden Nav for mobile view -->
-    <nav class="hidden-nav">
+    <nav id="hiddenNav" class="hidden-nav">
       <section class="hidden-nav-header">
         <img
+          id="closeBtn"
+          class="close-menu-btn"
           src="./images/icon-close-menu.svg"
           alt="Black X shaped icon with two intersecting diagonal lines on a transparent background, used to represent closing or dismissing a menu, simple and neutral design with no additional text or imagery"
         />
@@ -90,7 +92,7 @@
         <button class="register-btn" type="button">Register</button>
       </section>
     </nav>
-    <div class="overlay"></div>
+    <div id="overlay" class="overlay"></div>
     <!-- End -->
     <header>
       <img
@@ -138,5 +140,6 @@
         />
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
