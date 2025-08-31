@@ -104,6 +104,36 @@
     </nav>
     <div id="overlay" class="overlay"></div>
     <!-- End -->
+
+    <!-- Desktop Nav Drop Down Menu-->
+    <div id="featuresNav" class="features-nav-container">
+      <ul>
+        <li class="nav-list-item">
+          <img class="features-icon" src="./images/icon-todo.svg" alt="" /> Todo
+          List
+        </li>
+        <li class="nav-list-item">
+          <img class="features-icon" src="./images/icon-calendar.svg" alt="" />
+          Calendar
+        </li>
+        <li class="nav-list-item">
+          <img class="features-icon" src="./images/icon-reminders.svg" alt="" />
+          Reminders
+        </li>
+        <li class="nav-list-item">
+          <img class="features-icon" src="./images/icon-planning.svg" alt="" />
+          Planning
+        </li>
+      </ul>
+    </div>
+    <div id="companyNav" class="company-nav-container">
+      <ul>
+        <li class="nav-list-item">History</li>
+        <li class="nav-list-item">Our Team</li>
+        <li class="nav-list-item">Blog</li>
+      </ul>
+    </div>
+    <!-- End -->
     <header>
       <img
         class="logo"
@@ -112,8 +142,24 @@
       />
       <div class="desktop-view-nav">
         <nav class="desktop-nav">
-          <h2 class="desktop-nav-item">Features</h2>
-          <h2 class="desktop-nav-item">Company</h2>
+          <div class="desktop-features desktop-nav-item">
+            <h2 id="featuresHeader" class="features-header">Features</h2>
+            <img
+              id="featureArrowDesktop"
+              class="icon-arrow-up-desktop"
+              src="./images/icon-arrow-up.svg"
+              alt=""
+            />
+          </div>
+          <div class="desktop-company desktop-nav-item">
+            <h2 id="companyHeader" class="company-header">Company</h2>
+            <img
+              id="CompanyArrowDesktop"
+              class="icon-arrow-up-desktop"
+              src="./images/icon-arrow-up.svg"
+              alt=""
+            />
+          </div>
           <h2 class="desktop-nav-item click">Careers</h2>
           <h2 class="desktop-nav-item click">About</h2>
         </nav>

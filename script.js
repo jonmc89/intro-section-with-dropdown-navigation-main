@@ -64,3 +64,39 @@ companyArror.addEventListener("click", () => {
     companyArror.classList.add("arrow-rotate");
   }
 });
+
+// Desktop Menu Drop downs
+
+const featuresDropDown = document.getElementById("featuresNav");
+const featuresHeader = document.getElementById("featuresHeader");
+
+const companyDropDown = document.getElementById("companyNav");
+const companyHeader = document.getElementById("companyHeader");
+
+// Unhide Drop downs
+
+featuresHeader.addEventListener("click", () => {
+  const isCollapsed = featuresDropDown.classList.contains(
+    "features-nav-container-unhide"
+  );
+
+  if (isCollapsed) {
+    featuresDropDown.classList.remove("features-nav-container-unhide");
+  } else {
+    featuresDropDown.classList.add("features-nav-container-unhide");
+    companyDropDown.classList.remove("company-nav-container-unhide");
+  }
+});
+
+companyHeader.addEventListener("click", () => {
+  const isCollapsed = companyDropDown.classList.contains(
+    "company-nav-container-unhide"
+  );
+
+  if (isCollapsed) {
+    companyDropDown.classList.remove("company-nav-container-unhide");
+  } else {
+    companyDropDown.classList.add("company-nav-container-unhide");
+    featuresDropDown.classList.remove("features-nav-container-unhide");
+  }
+});
